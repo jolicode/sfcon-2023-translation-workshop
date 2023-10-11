@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ app.locale }}">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ importmap() }}
+        {% endblock %}
+    </head>
+    <body class="h-screen bg-slate-200">
+        <div class="pt-12 pb-12 sm:pb-16">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <header class="mx-auto max-w-2xl lg:mx-0">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        SymfonyCon Brussels 2023 food advisor</h2>
+                    <p class="mt-2 text-lg leading-8 text-gray-600">
+                        🍔🍟 🌯🌮 🍻🥤
+                        <br>
+                        You are looking for a place to eat in Brussels during SymfonyCon?
+                        <br>
+                        You are at the right place!
+                    </p>
+                </header>
+                {% block body %}{% endblock %}
+                <footer class="fixed bottom-12 w-full mx-auto pt-32">
+                    <span class="text-gray-500">
+                        SymfonyCon Brussels 2023 food advisor - From 0 to master the translation of your app - Mathieu Santostefano
+                    </span>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
