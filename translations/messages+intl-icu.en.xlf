@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="fr">
-  <file id="messages.fr">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="en">
+  <file id="messages.en">
     <unit id="E3JGegZ" name="home.articles.heading">
       <segment>
         <source>home.articles.heading</source>
@@ -10,19 +10,19 @@
     <unit id="Ro89gZF" name="home.heading">
       <segment>
         <source>home.heading</source>
-        <target>SymfonyCon Bruxelles 2023 Food Advisor</target>
+        <target>SymfonyCon Brussels 2023 Food Advisor</target>
       </segment>
     </unit>
     <unit id="NGfnUOu" name="home.footer.credits">
       <segment>
         <source>home.footer.credits</source>
-        <target>De 0 à la maîtrise de la traduction de votre application - Mathieu Santostefano</target>
+        <target>From 0 to master the translation of your app - Mathieu Santostefano</target>
       </segment>
     </unit>
     <unit id="Xy2bYz8" name="meta.title">
       <segment>
         <source>meta.title</source>
-        <target>SymfonyCon Bruxelles 2023 Food Advisor</target>
+        <target>SymfonyCon Brussels 2023 Food Advisor</target>
       </segment>
     </unit>
     <unit id="CdMCZWG" name="home.subtitle.paragraph.html">
@@ -31,9 +31,9 @@
         <target><![CDATA[
           🍔🍟 🌯🌮 🍻🥤
           <br>
-          Vous cherchez les meilleurs lieux pour manger à Bruxelles lors de la SymfonyCon?
+          You are looking for the best spots to eat in Brussels during SymfonyCon?
           <br>
-          Vous êtes au bon endroit!
+          You are at the right place!
         ]]></target>
       </segment>
     </unit>

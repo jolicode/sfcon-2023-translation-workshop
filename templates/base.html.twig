@@ -2,7 +2,11 @@
 <html lang="{{ app.locale }}">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>
+            {%- block title -%}
+                {{ 'meta.title'|trans }}
+            {%- endblock -%}
+        </title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
@@ -17,9 +21,9 @@
             <div class="mx-auto container px-6 lg:px-8">
                 <header class="w-full mx-auto lg:mx-0">
                     <div class="flex justify-between">
-                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            SymfonyCon Brussels 2023 food advisor
-                        </h2>
+                        <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                            {{ 'home.heading'|trans }}
+                        </h1>
                         <details class="relative bg-white rounded-lg m-2 h-12 hover:drop-shadow-lg">
                             <summary class="py-3 px-4">{{ (app.locale|split('_')|first)|locale_name|capitalize }}</summary>
                             <div class="flex flex-col absolute w-full bg-white rounded-lg py-3 px-5 -mt-3 left-0">
@@ -37,17 +41,13 @@
                         </details>
                     </div>
                     <p class="mt-2 text-lg leading-8 text-gray-600">
-                        🍔🍟 🌯🌮 🍻🥤
-                        <br>
-                        You are looking for a place to eat in Brussels during SymfonyCon?
-                        <br>
-                        You are at the right place!
+                        {{ 'home.subtitle.paragraph.html'|trans|raw }}
                     </p>
                 </header>
                 {% block body %}{% endblock %}
                 <footer class="fixed bottom-12 w-full mx-auto pt-32">
                     <span class="text-gray-500">
-                        SymfonyCon Brussels 2023 food advisor - From 0 to master the translation of your app - Mathieu Santostefano
+                        {{ 'home.heading'|trans }} - {{ 'home.footer.credits'|trans }}
                     </span>
                 </footer>
             </div>
