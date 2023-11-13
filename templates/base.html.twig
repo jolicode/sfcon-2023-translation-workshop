@@ -12,12 +12,30 @@
             {{ importmap() }}
         {% endblock %}
     </head>
-    <body class="h-screen bg-slate-200">
+    <body class="h-screen bg-stone-100">
         <div class="pt-12 pb-12 sm:pb-16">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <header class="mx-auto max-w-2xl lg:mx-0">
-                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        SymfonyCon Brussels 2023 food advisor</h2>
+            <div class="mx-auto container px-6 lg:px-8">
+                <header class="w-full mx-auto lg:mx-0">
+                    <div class="flex justify-between">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                            SymfonyCon Brussels 2023 food advisor
+                        </h2>
+                        <details class="relative bg-white rounded-lg m-2 h-12 hover:drop-shadow-lg">
+                            <summary class="py-3 px-4">{{ (app.locale|split('_')|first)|locale_name|capitalize }}</summary>
+                            <div class="flex flex-col absolute w-full bg-white rounded-lg py-3 px-5 -mt-3 left-0">
+                                {% for locale in supported_locales %}
+                                    {% set short_locale = locale|split('_')|first %}
+                                    {% if locale != app.locale %}
+                                        <a class="hover:underline" href="{{ path('app_blog', { _locale: locale }) }}">
+                                            {{ short_locale|locale_name|capitalize }}
+                                        </a>
+                                    {% else %}
+                                        <span class="font-bold">{{ short_locale|locale_name|capitalize }}</span>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </details>
+                    </div>
                     <p class="mt-2 text-lg leading-8 text-gray-600">
                         🍔🍟 🌯🌮 🍻🥤
                         <br>

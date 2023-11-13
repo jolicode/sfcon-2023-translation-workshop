@@ -20,7 +20,7 @@ class DashboardController extends AbstractDashboardController
     ) {
     }
 
-    #[Route('/admin/{_locale}', name: 'admin')]
+    #[Route('/admin', name: 'admin')]
     public function index(): Response
     {
         return $this->redirect($this->adminUrlGenerator->setController(UserCrudController::class)->generateUrl());

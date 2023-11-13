@@ -2,3 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+details summary {
+    cursor: pointer;
+}
+
+details summary > * {
+    display: inline;
+}
+
+details[open] {
+    padding-bottom: 1em;
+}
+
+summary {
+    position: relative;
+}
+summary::marker {
+    content: none;
+}
+summary::after {
+    content: '🔼';
+}
+summary::after {
+    margin-left: 1rem;
+}
+[open] summary::after {
+    content: '🔽';
+}
