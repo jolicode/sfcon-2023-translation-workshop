@@ -46,7 +46,7 @@ final class CategoryFactory extends ModelFactory
     {
         return [
             'createdAt' => \DateTimeImmutable::createFromMutable($createdAt = self::faker()->dateTimeBetween('-100 days', '-1 days')),
-            'name' => $name = self::faker()->word(),
+            'name' => $name = self::faker()->unique()->randomElement(['Junk', 'Healthy', 'Vegan', 'Asian', 'Sweet']),
             'slug' => $this->slugger->slug($name)->lower(),
             'updatedAt' => \DateTimeImmutable::createFromMutable($createdAt->modify('+' . self::faker()->numberBetween(1, 5).' days')),
         ];

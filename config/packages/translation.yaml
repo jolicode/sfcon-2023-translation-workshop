@@ -2,12 +2,6 @@ framework:
     default_locale: 'en_US'
     translator:
         default_path: '%kernel.project_dir%/translations'
-#        providers:
-#            crowdin:
-#                dsn: '%env(CROWDIN_DSN)%'
-#            loco:
-#                dsn: '%env(LOCO_DSN)%'
-#            lokalise:
-#                dsn: '%env(LOKALISE_DSN)%'
-#            phrase:
-#                dsn: '%env(PHRASE_DSN)%'
+        providers:
+            lokalise:
+                dsn: '%env(LOKALISE_DSN)%'

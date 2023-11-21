@@ -26,6 +26,7 @@
         "symfony/http-client": "^6.3",
         "symfony/http-kernel": "^6.4",
         "symfony/intl": "^6.3",
+        "symfony/lokalise-translation-provider": "^6.4",
         "symfony/mailer": "^6.3",
         "symfony/mime": "^6.3",
         "symfony/monolog-bundle": "^3.0",

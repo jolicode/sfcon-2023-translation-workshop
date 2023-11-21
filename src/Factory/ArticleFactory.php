@@ -4,6 +4,7 @@ namespace App\Factory;
 
 use App\Entity\Article;
 use App\Repository\ArticleRepository;
+use phpDocumentor\Reflection\Types\Self_;
 use Symfony\Component\String\Slugger\SluggerInterface;
 use Zenstruck\Foundry\ModelFactory;
 use Zenstruck\Foundry\Proxy;
@@ -47,9 +48,9 @@ final class ArticleFactory extends ModelFactory
     {
         return [
             'author' => UserFactory::random(),
-            'content' => $content = self::faker()->text(),
+            'content' => $content = self::faker()->paragraphs(self::faker()->numberBetween(1, 4), true),
             'createdAt' => \DateTimeImmutable::createFromMutable($createdAt = self::faker()->dateTime()),
-            'title' => $title = self::faker()->text(25),
+            'title' => $title = self::faker()->word(),
             'slug' => $this->slugger->slug($title)->lower(),
             'summary' => u($content)->slice(0, 150) . '...',
             'updatedAt' => \DateTimeImmutable::createFromMutable($createdAt->modify('+' . self::faker()->numberBetween(1, 5).' days')),

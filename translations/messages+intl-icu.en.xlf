@@ -4,7 +4,7 @@
     <unit id="E3JGegZ" name="home.articles.heading">
       <segment>
         <source>home.articles.heading</source>
-        <target>Articles</target>
+        <target>All Articles</target>
       </segment>
     </unit>
     <unit id="Ro89gZF" name="home.heading">
@@ -35,6 +35,42 @@
           <br>
           You are at the right place!
         ]]></target>
+      </segment>
+    </unit>
+    <unit id="YoaPLEE" name="category.articles.heading">
+      <segment>
+        <source>category.articles.heading</source>
+        <target>"{category}" articles</target>
+      </segment>
+    </unit>
+    <unit id="FuwfxCf" name="authors.heading">
+      <segment>
+        <source>authors.heading</source>
+        <target>Authors</target>
+      </segment>
+    </unit>
+    <unit id="5eegTMV" name="categories.heading">
+      <segment>
+        <source>categories.heading</source>
+        <target>Categories</target>
+      </segment>
+    </unit>
+    <unit id="2IF6qMR" name="menu.categories">
+      <segment>
+        <source>menu.categories</source>
+        <target>Categories</target>
+      </segment>
+    </unit>
+    <unit id="PE55S4r" name="menu.authors">
+      <segment>
+        <source>menu.authors</source>
+        <target>Authors</target>
+      </segment>
+    </unit>
+    <unit id="k6VxCsO" name="menu.search">
+      <segment>
+        <source>menu.search</source>
+        <target>Search</target>
       </segment>
     </unit>
   </file>

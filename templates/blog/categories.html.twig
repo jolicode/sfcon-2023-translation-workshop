@@ -1,10 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h2 class="text-4xl font-bold mt-20">{{ 'home.articles.heading'|trans }}</h2>
+    <h2 class="text-4xl font-bold mt-20">{{ 'categories.heading'|trans }}</h2>
     <div class="mx-auto grid grid-cols-1 gap-8 border-t border-gray-200 pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        {% for article in articles %}
-            {{ include('blog/_article_thumbnail.html.twig') }}
+        {% for category in categories %}
+            {{ include('blog/_category_thumbnail.html.twig') }}
         {% endfor %}
     </div>
 {% endblock %}

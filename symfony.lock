@@ -131,6 +131,15 @@
             "src/Kernel.php"
         ]
     },
+    "symfony/lokalise-translation-provider": {
+        "version": "6.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "db778cb06bece4201899ca2b33542f7cd6520d06"
+        }
+    },
     "symfony/mailer": {
         "version": "6.3",
         "recipe": {
