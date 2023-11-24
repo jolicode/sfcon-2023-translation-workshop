@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use App\Entity\Category;
+use App\Entity\User;
 use App\Repository\ArticleRepository;
 use App\Repository\CategoryRepository;
 use App\Repository\UserRepository;
@@ -69,6 +70,14 @@ class BlogController extends AbstractController
     {
         return $this->render('blog/authors.html.twig', [
             'authors' => $this->userRepository->findAll(),
+        ]);
+    }
+
+    #[Route('/{_locale<%app.supported_locales_regex%>}/author/{id}', name: 'app_author')]
+    public function author(User $author): Response
+    {
+        return $this->render('blog/author.html.twig', [
+            'author' => $author,
         ]);
     }
 

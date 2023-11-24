@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" target-language="en-US" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="gzRGcIx" resname="author.articles.heading">
+        <source>author.articles.heading</source>
+        <target>__author.articles.heading</target>
+      </trans-unit>
+      <trans-unit id="FuwfxCf" resname="authors.heading">
+        <source>authors.heading</source>
+        <target>Authors</target>
+      </trans-unit>
+      <trans-unit id="5eegTMV" resname="categories.heading">
+        <source>categories.heading</source>
+        <target>Categories</target>
+      </trans-unit>
+      <trans-unit id="YoaPLEE" resname="category.articles.heading">
+        <source>category.articles.heading</source>
+        <target>"{category}" articles</target>
+      </trans-unit>
+      <trans-unit id="E3JGegZ" resname="home.articles.heading">
+        <source>home.articles.heading</source>
+        <target>All Articles</target>
+      </trans-unit>
+      <trans-unit id="NGfnUOu" resname="home.footer.credits">
+        <source>home.footer.credits</source>
+        <target>From 0 to master the translation of your app - Mathieu Santostefano</target>
+      </trans-unit>
+      <trans-unit id="Ro89gZF" resname="home.heading">
+        <source>home.heading</source>
+        <target>SymfonyCon Brussels 2023 Food Advisor</target>
+      </trans-unit>
+      <trans-unit id="CdMCZWG" resname="home.subtitle.paragraph.html">
+        <source>home.subtitle.paragraph.html</source>
+        <target><![CDATA[
+          🍔🍟 🌯🌮 🍻🥤
+          <br>
+          You are looking for the best spots to eat in Brussels during SymfonyCon?
+          <br>
+          You are at the right place!
+        ]]></target>
+      </trans-unit>
+      <trans-unit id="PE55S4r" resname="menu.authors">
+        <source>menu.authors</source>
+        <target>Authors</target>
+      </trans-unit>
+      <trans-unit id="2IF6qMR" resname="menu.categories">
+        <source>menu.categories</source>
+        <target>Categories</target>
+      </trans-unit>
+      <trans-unit id="k6VxCsO" resname="menu.search">
+        <source>menu.search</source>
+        <target>Search</target>
+      </trans-unit>
+      <trans-unit id="Xy2bYz8" resname="meta.title">
+        <source>meta.title</source>
+        <target>SymfonyCon Brussels 2023 Food Advisor</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
