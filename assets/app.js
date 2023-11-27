@@ -1,7 +1,15 @@
-/*
- * Welcome to your app's main JavaScript file!
- *
- * This file will be included onto the page via the importmap() Twig function,
- * which should already be in your base.html.twig.
- */
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉')
+import './bootstrap.js';
+import {
+    trans,
+    SEARCH_RESULTS_HEADING,
+} from './translator.js';
+
+
+const observer = new MutationObserver((mutations, observer) => {
+    let count = mutations.findLast((mutation) => mutation.target.id === 'search-results').target.childElementCount;
+    document.querySelector('.search-results-title').innerHTML = trans(SEARCH_RESULTS_HEADING, { count: count });
+});
+observer.observe(document.querySelector('#search-results'), {
+    subtree: true,
+    attributes: true,
+});

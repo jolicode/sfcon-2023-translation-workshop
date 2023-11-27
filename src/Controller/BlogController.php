@@ -84,8 +84,6 @@ class BlogController extends AbstractController
     #[Route('/{_locale<%app.supported_locales_regex%>}/search', name: 'app_search')]
     public function search(): Response
     {
-        return $this->render('blog/categories.html.twig', [
-            'categories' => $this->categoryRepository->findAll(),
-        ]);
+        return $this->render('blog/search.html.twig');
     }
 }

@@ -7,7 +7,7 @@
     <body>
       <trans-unit id="gzRGcIx" resname="author.articles.heading">
         <source>author.articles.heading</source>
-        <target>__author.articles.heading</target>
+        <target>{author}'s articles</target>
       </trans-unit>
       <trans-unit id="FuwfxCf" resname="authors.heading">
         <source>authors.heading</source>
@@ -43,6 +43,10 @@
           You are at the right place!
         ]]></target>
       </trans-unit>
+      <trans-unit id="s.YpQ5W" resname="label.search_button">
+        <source>label.search_button</source>
+        <target>Search</target>
+      </trans-unit>
       <trans-unit id="PE55S4r" resname="menu.authors">
         <source>menu.authors</source>
         <target>Authors</target>
@@ -58,6 +62,14 @@
       <trans-unit id="Xy2bYz8" resname="meta.title">
         <source>meta.title</source>
         <target>SymfonyCon Brussels 2023 Food Advisor</target>
+      </trans-unit>
+      <trans-unit id="DYP7aKP" resname="search.heading">
+        <source>search.heading</source>
+        <target>Search</target>
+      </trans-unit>
+      <trans-unit id="WqzHMg7" resname="search.results.heading">
+        <source>search.results.heading</source>
+        <target>{count} results</target>
       </trans-unit>
     </body>
   </file>

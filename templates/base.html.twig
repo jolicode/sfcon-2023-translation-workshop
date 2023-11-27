@@ -26,17 +26,17 @@
                         </h1>
                         <div class="flex justify-between space-x-8">
                             <ul class="flex flex-row space-x-4">
-                                <li class="rounded-full px-6 py-5 hover:bg-white {{ app.current_route == 'app_categories' ? 'bg-white text-bold' }}">
+                                <li class="rounded-full px-6 py-3 my-auto hover:bg-white {{ app.current_route == 'app_categories' ? 'bg-white text-bold' }}">
                                     <a href="{{ path('app_categories') }}">{{ 'menu.categories'|trans }}</a>
                                 </li>
-                                <li class="rounded-full px-6 py-5 hover:bg-white {{ app.current_route == 'app_authors' ? 'bg-white text-bold' }}">
+                                <li class="rounded-full px-6 py-3 my-auto hover:bg-white {{ app.current_route == 'app_authors' ? 'bg-white text-bold' }}">
                                     <a href="{{ path('app_authors') }}">{{ 'menu.authors'|trans }}</a>
                                 </li>
-                                <li class="rounded-full px-6 py-5 hover:bg-white {{ app.current_route == 'app_search' ? 'bg-white text-bold' }}">
+                                <li class="rounded-full px-6 py-3 my-auto hover:bg-white {{ app.current_route == 'app_search' ? 'bg-white text-bold' }}">
                                     <a href="{{ path('app_search') }}">{{ 'menu.search'|trans }}</a>
                                 </li>
                             </ul>
-                            <details class="relative bg-white rounded-lg m-2 h-12 hover:drop-shadow-lg">
+                            <details class="relative bg-white rounded-lg h-12 hover:drop-shadow-lg">
                                 <summary class="py-3 px-4">{{ (app.locale|split('_')|first)|locale_name|capitalize }}</summary>
                                 <div class="flex flex-col absolute w-full bg-white rounded-lg py-3 px-5 -mt-3 left-0">
                                     {% for locale in supported_locales %}

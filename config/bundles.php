@@ -15,4 +15,8 @@ return [
     Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
     Symfonycasts\TailwindBundle\SymfonycastsTailwindBundle::class => ['all' => true],
     EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle::class => ['all' => true],
+    Symfony\UX\Translator\UxTranslatorBundle::class => ['all' => true],
+    Symfony\UX\StimulusBundle\StimulusBundle::class => ['all' => true],
+    Symfony\UX\TwigComponent\TwigComponentBundle::class => ['all' => true],
+    Symfony\UX\LiveComponent\LiveComponentBundle::class => ['all' => true],
 ];
