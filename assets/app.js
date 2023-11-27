@@ -5,9 +5,11 @@ import {
 } from './translator.js';
 
 
-const observer = new MutationObserver((mutations, observer) => {
-    let count = mutations.findLast((mutation) => mutation.target.id === 'search-results').target.childElementCount;
-    document.querySelector('.search-results-title').innerHTML = trans(SEARCH_RESULTS_HEADING, { count: count });
+const observer = new MutationObserver((mutations) => {
+    let count = mutations.findLast((mutation) => {
+        return mutation.target.id === 'search-results';
+    }).target.childElementCount;
+    document.querySelector('.search-results-title').innerHTML = trans(SEARCH_RESULTS_HEADING, { count });
 });
 observer.observe(document.querySelector('#search-results'), {
     subtree: true,
