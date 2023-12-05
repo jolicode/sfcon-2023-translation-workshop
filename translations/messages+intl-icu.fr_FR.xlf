@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" target-language="fr-FR" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="FuwfxCf" resname="authors.heading">
+        <source>authors.heading</source>
+        <target>__authors.heading</target>
+      </trans-unit>
+      <trans-unit id="YoaPLEE" resname="category.articles.heading">
+        <source>category.articles.heading</source>
+        <target>__category.articles.heading</target>
+      </trans-unit>
+      <trans-unit id="5eegTMV" resname="categories.heading">
+        <source>categories.heading</source>
+        <target>__categories.heading</target>
+      </trans-unit>
+      <trans-unit id="E3JGegZ" resname="home.articles.heading">
+        <source>home.articles.heading</source>
+        <target>__home.articles.heading</target>
+      </trans-unit>
+      <trans-unit id="OELuHJ7" resname="complex_translation">
+        <source>complex_translation</source>
+        <target>__complex_translation</target>
+      </trans-unit>
+      <trans-unit id="Ro89gZF" resname="home.heading">
+        <source>home.heading</source>
+        <target>__home.heading</target>
+      </trans-unit>
+      <trans-unit id="2IF6qMR" resname="menu.categories">
+        <source>menu.categories</source>
+        <target>__menu.categories</target>
+      </trans-unit>
+      <trans-unit id="PE55S4r" resname="menu.authors">
+        <source>menu.authors</source>
+        <target>__menu.authors</target>
+      </trans-unit>
+      <trans-unit id="k6VxCsO" resname="menu.search">
+        <source>menu.search</source>
+        <target>__menu.search</target>
+      </trans-unit>
+      <trans-unit id="CdMCZWG" resname="home.subtitle.paragraph.html">
+        <source>home.subtitle.paragraph.html</source>
+        <target>__home.subtitle.paragraph.html</target>
+      </trans-unit>
+      <trans-unit id="NGfnUOu" resname="home.footer.credits">
+        <source>home.footer.credits</source>
+        <target>__home.footer.credits</target>
+      </trans-unit>
+      <trans-unit id="Xy2bYz8" resname="meta.title">
+        <source>meta.title</source>
+        <target>__meta.title</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
