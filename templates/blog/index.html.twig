@@ -3,6 +3,8 @@
 {% block title %}Symfony Con Brussels 2023{% endblock %}
 
 {% block body %}
+    {{ ''|trans}}
+
     <h2 class="text-4xl font-bold mt-20">{{ 'article.heading'|trans }}</h2>
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         {% for article in articles %}
