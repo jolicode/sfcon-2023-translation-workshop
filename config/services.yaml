@@ -6,7 +6,6 @@
 parameters:
     app.supported_locales: ['en_US', 'fr_FR']
     app.supported_locales_regex: 'en_US|fr_FR'
-
 services:
     # default configuration for services in *this* file
     _defaults:
