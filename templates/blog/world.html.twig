@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2 class="text-4xl font-bold mt-20">World 🌍️</h2>
+    <div class="pt-10">
+{#
+* Build a page with a country switcher, that display various localized data (date, time, money amount, timezone of the countries speaking this language, …)
+* Leverage Translation, Intl, Form and Twig components
+* Bonus for using Symfony UX 🚀
+#}
+        {{ form_start(countriesForm, { action: path('app_world_post') }) }}
+            {{ form_row(countriesForm, {
+                label_attr: {
+                    class: 'block text-gray-700 font-bold mb-2'
+                },
+                attr: {
+                    class: 'w-full p-5'
+                }
+            }) }}
+            <button type="submit" class="rounded-lg bg-green-500 p-4 mt-4">Submit</button>
+        {{ form_end(countriesForm) }}
+
+        {% if countryName is not null and countryFlag is not null and countryTimezones is not null %}
+            <div class="pt-10">
+                <div class="flex flex-wrap">
+                    <div class="w-3/4 p-5">
+                        <div class="bg-white shadow-lg rounded-lg px-5 py-5">
+                            <div class="flex justify-between">
+                                <div class="text-2xl font-bold">{{ countryName }}</div>
+                            </div>
+                            <div class="text-xl font-bold">
+                                <img src="{{ countryFlag }}" alt="">
+                            </div>
+                            Currencies : <br>
+                            {% for currency in countryCurrencies %}
+                                <div class="text-xl font-bold">{{ currency }}</div>
+                            {% endfor %}
+                            <br><br>
+                            Timezones : <br>
+                            {% for tz in countryTimezones %}
+                                <div class="text-xl font-bold">{{ tz }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

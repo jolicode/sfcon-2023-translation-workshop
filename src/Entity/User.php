@@ -38,6 +38,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         $this->articles = new ArrayCollection();
     }
 
+    public function __toString(): string
+    {
+        return $this->name ?? '';
+    }
+
     /**
      * A visual identifier that represents this user.
      *

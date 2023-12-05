@@ -38,6 +38,11 @@ class Category
         $this->articles = new ArrayCollection();
     }
 
+    public function __toString(): string
+    {
+        return $this->name ?? '';
+    }
+
     public function addArticle(Article $article): static
     {
         if (!$this->articles->contains($article)) {

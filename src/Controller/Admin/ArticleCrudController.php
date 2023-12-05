@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use A2lix\TranslationFormBundle\Form\Type\TranslationsType;
 use App\Entity\Article;
 use App\Entity\Category;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
@@ -12,6 +13,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\DateField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use EasyCorp\Bundle\EasyAdminBundle\Form\Type\TextEditorType;
 
 class ArticleCrudController extends AbstractCrudController
 {
@@ -31,8 +33,14 @@ class ArticleCrudController extends AbstractCrudController
     {
         return [
             IdField::new('id'),
-            TextField::new('title'),
-            TextEditorField::new('content'),
+            TextField::new('title')->onlyOnIndex(),
+            TextEditorField::new('content')->setFormType(TranslationsType::class)->setFormTypeOptions([
+                'fields' => [
+                    'content' => [
+                        'field_type' => TextEditorType::class,
+                    ],
+                ]
+            ]),
             DateField::new('createdAt'),
             DateField::new('updatedAt'),
             AssociationField::new('author')
